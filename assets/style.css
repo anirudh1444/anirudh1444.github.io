@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   margin: 0;
@@ -7,16 +8,21 @@ body {
   color: #333;
 }
 
+/* Navigation */
 nav {
-  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* menu to top-right */
+  padding: 20px 40px 0 0; /* top and right padding */
+  box-sizing: border-box;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
   display: flex;
-  justify-content: center;
   gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav a {
@@ -29,11 +35,12 @@ nav a.active {
   font-weight: bold;
 }
 
+/* Profile Section */
 .profile-pic {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin-top: 40px;
+  margin-top: 60px; /* more spacing from top nav */
 }
 
 h1 {
@@ -48,6 +55,7 @@ h1 {
   line-height: 1.6;
 }
 
+/* Social Links */
 .social-links {
   margin: 20px 0;
 }
@@ -60,9 +68,10 @@ h1 {
 }
 
 .social-links a:hover {
-  color: #0073b1; /* LinkedIn blue as hover accent */
+  color: #0073b1; /* LinkedIn blue hover */
 }
 
+/* Footer */
 footer {
   margin-top: 40px;
   font-size: 0.9rem;
