@@ -3,55 +3,189 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CS 61B | Anirudh Sreerama</title>
+  <title>CS 61B - Data Structures</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cs170.html">CS 170</a></li>
+      <li><a href="cs61b.html" class="active">CS 61B</a></li>
+      <li><a href="leetcode.html">LeetCode</a></li>
+      <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
   <header>
     <h1>CS 61B: Data Structures</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="cs170.html">CS 170</a>
-      <a href="cs61b.html">CS 61B</a>
-      <a href="leetcode.html">LeetCode</a>
-      <a href="resume.html">Resume</a>
-    </nav>
   </header>
+
   <main>
-    <h2>Spring 2025 Discussion Materials</h2>
-    <table>
-      <tr><th>Topic</th><th>Slides</th><th>Resources</th></tr>
-      <tr><td>Introduction to Java</td><td><a href="#">Slides</a></td><td><a href="#">Git Cheatsheet</a> / <a href="#">Java Cheatsheet</a> / <a href="#">Tips</a></td></tr>
-      <tr><td>Scope, Linked Lists, Arrays</td><td><a href="#">Slides</a></td><td><a href="#">Proj1A Video</a> / <a href="#">Slides</a></td></tr>
-      <tr><td>Inheritance, Comparator/ables</td><td><a href="#">Slides</a></td><td><a href="#">Proj1B Video</a> / <a href="#">Slides</a></td></tr>
-      <tr><td>Iterator/ables, Asymptotics 1</td><td><a href="#">Slides</a></td><td><a href="#">Asymptotics Cheatsheet</a></td></tr>
-      <tr><td>Asymptotics 2</td><td><a href="#">Slides</a></td><td><a href="#">HW2 Video</a> / <a href="#">Slides</a></td></tr>
-      <tr><td>ADTs, Disjoint Sets, BSTs</td><td><a href="#">Slides</a></td><td><a href="#">Proj2A Video</a> / <a href="#">Slides</a></td></tr>
-      <tr><td>B-Trees, LLRBs, Hashing</td><td><a href="#">Slides</a></td><td></td></tr>
-      <tr><td>Graphs, Heaps</td><td><a href="#">Slides</a></td><td><a href="#">Proj2B Video</a> / <a href="#">Slides</a></td></tr>
-      <tr><td>Shortest Paths, MSTs</td><td><a href="#">Slides</a></td><td></td></tr>
-      <tr><td>Graphs II, Tries</td><td><a href="#">Slides</a></td><td></td></tr>
-      <tr><td>Sorting</td><td><a href="#">Slides</a></td><td><a href="#">Proj3B Video</a> / <a href="#">Slides</a></td></tr>
-      <tr><td>More Sorting</td><td><a href="#">Slides</a></td><td></td></tr>
-      <tr><td>Final Review</td><td><a href="#">Slides</a></td><td><a href="#">Cheatsheet 1</a>, <a href="#">Cheatsheet 2</a> / <a href="#">iPad Notes</a></td></tr>
-    </table>
-    <h2>Fall 2024 Discussion Materials</h2>
-    <table>
-      <tr><th>Topic</th><th>Slides</th><th>Resources</th></tr>
-      <tr><td>Introduction to Java</td><td><a href="#">Slides</a></td><td><a href="#">Video</a></td></tr>
-      <tr><td>Scope, Linked Lists, Arrays</td><td><a href="#">Slides</a></td><td><a href="#">Proj1A Video</a> / <a href="#">Slides</a></td></tr>
-      <tr><td>Inheritance</td><td><a href="#">Slides</a></td><td><a href="#">Proj1B Video</a> / <a href="#">Slides</a></td></tr>
-      <tr><td>Iterators, Iterables</td><td><a href="#">Slides</a></td><td></td></tr>
-      <tr><td>Asymptotics, Disjoint Sets</td><td><a href="#">Slides</a></td><td><a href="#">HW2 Video</a> / <a href="#">Slides</a></td></tr>
-      <tr><td>ADTs, BSTs</td><td><a href="#">Slides</a></td><td><a href="#">Notes</a></td></tr>
-      <tr><td>B-Trees, LLRBs, Hashing</td><td><a href="#">Slides</a></td><td><a href="#">Proj2A Video</a> / <a href="#">Slides</a></td></tr>
-      <tr><td>Graphs, Heaps</td><td><a href="#">Slides</a></td><td><a href="#">Proj2B Video</a></td></tr>
-      <tr><td>Shortest Paths, MSTs</td><td><a href="#">Slides</a></td><td></td></tr>
-      <tr><td>Graphs II, Tries</td><td><a href="#">Slides</a></td><td></td></tr>
-      <tr><td>Sorting</td><td><a href="#">Slides</a></td><td></td></tr>
-      <tr><td>More Sorting</td><td><a href="#">Slides</a></td><td><a href="#">Proj3B Video</a> / <a href="#">Slides</a></td></tr>
-      <tr><td>Final Review</td><td><a href="#">Slides</a></td><td><a href="#">Cheatsheet</a></td></tr>
-    </table>
-  </main>
+        <!-- Spring 2025 -->
+        <section>
+            <h2>Spring 2025 Discussion Materials (Credit to Stella Kaval)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Slides</th>
+                        <th>Resources</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Introduction to Java</td>
+                        <td><a href="https://docs.google.com/presentation/d/1ZBkHub-M87gvr7yMkv3bz0yueMOenkcNvqzRoOe5mYc/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://docs.google.com/document/d/1OPKYPxTduioZBgba7WIxaSs32KjolvJqeouaDyj-l9w/edit?usp=sharing" target="_blank">Git Cheatsheet</a> / <a href="https://docs.google.com/document/d/1bYGkMZQfFhGfpcBsefa8CgkQoFKErBpaTOGQZdeqjKk/edit?usp=sharing" target="_blank">Java Cheatsheet</a> / <a href="https://stellakaval.github.io/cs61btips/" target="_blank">Tips</a></td>
+                    </tr>
+                    <tr>
+                        <td>Scope, Linked Lists, Arrays</td>
+                        <td><a href="https://docs.google.com/presentation/d/1O6P_sX1FnYi-ZKph6SPtpvsE0B8_mRAObLOMF7EIJrk/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://youtu.be/f5smA9rt7bg?si=WUO0DhwwmWXJgQnW" target="_blank">Proj1A Video</a> / <a href="https://docs.google.com/presentation/d/15z2SZ0mIsaZZTCZF5I8EA8Q3QL49R8rpV5PlJyOubqs/edit?usp=sharing" target="_blank">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>Inheritance, Comparator/ables</td>
+                        <td><a href="https://docs.google.com/presentation/d/1PjME5TU_Uh86s2WRorb5a9HcuvKDxj8_fFsmyN7AjLw/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://www.youtube.com/watch?v=m1zy1tuA6o8" target="_blank">Proj1B Video</a> / <a href="https://docs.google.com/presentation/d/1UAUWgUdIg7Fm8S0KdIWXcI93njQ6vztlvGxKiDbFPZw/edit?usp=sharing" target="_blank">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>Iterator/ables, Asymptotics 1</td>
+                        <td><a href="https://docs.google.com/presentation/d/1x5s97p4-UxmOnnIPimOK9sA_T2IQC8_vkEpc3E7whd8/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/1ed57CRb_QYBtTKkY4r_Zf098myVyGGuk/view?usp=sharing" target="_blank">Asymptotics Cheatsheet</a></td>
+                    </tr>
+                    <tr>
+                        <td>Asymptotics 2</td>
+                        <td><a href="https://docs.google.com/presentation/d/1PRw3B4BekbyeQGBjoUmo_98TWUc98mG4TogW-60U1j8/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://www.youtube.com/watch?v=v1soQ8oOfSo" target="_blank">HW2 Video</a> / <a href="https://docs.google.com/presentation/d/1KNuaQMTBlo_o3fT14dJk56SZxpDgl7bBArTIPIbDhrg/edit#slide=id.g286fea5d52b_0_0" target="_blank">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>ADTs, Disjoint Sets, BSTs</td>
+                        <td><a href="https://docs.google.com/presentation/d/1xaNtCuuALldjOcWoUYZQH3sddwMtqj1CUY9QyNmH9nY/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://www.youtube.com/watch?v=f_XZsWK9KWQ" target="_blank">Proj2A Video</a> / <a href="https://docs.google.com/presentation/d/1Y81dvWVrWjlRt5vveqb9JwMhRenKl-b3xWtJ7ey6xU4/edit#slide=id.g24db28cdf3a_0_0" target="_blank">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>B-Trees, LLRBs, Hashing</td>
+                        <td><a href="https://docs.google.com/presentation/d/1EdAn72S2YIE_X5JqKZU1QYp8SbOogV-FXGTJ3IHiatw/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Graphs, Heaps</td>
+                        <td><a href="https://docs.google.com/presentation/d/1S0UtkT1Dc4cuh2n4BOxZxyMWvXVexPn6UA39yTlJeQs/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://www.youtube.com/watch?v=zIPunMGKRuM" target="_blank">Proj2B Video</a> / <a href="https://docs.google.com/presentation/d/1rv5gczdTIq9t7vhWqPkGm2AZopKC-BdxSoB4eGJyQ_I/edit#slide=id.g30d2ad160bd_0_647" target="_blank">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>Shortest Paths, MSTs</td>
+                        <td><a href="https://docs.google.com/presentation/d/1Ly8F6RiRqVeNyy__g6FLzXTJgJEhQY7Mre8hb_LPov4/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Graphs II, Tries</td>
+                        <td><a href="https://docs.google.com/presentation/d/1ebij-5j5BrJyrt6XUS2PRGY7HznTAqrfBu8s8TwM5m0/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Sorting</td>
+                        <td><a href="https://docs.google.com/presentation/d/1DAwTu4bD9oXjOK_PdtVzxSGGlSC7a5CBKksoCU18xkw/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://www.youtube.com/watch?v=3kwMTDP7Y3I" target="_blank">Proj3B Video</a> / <a href="https://docs.google.com/presentation/d/1orltD3Ds2l6fBXm21YMYSsJ-oD9F2A9yk6Mea_uRBxU/edit#slide=id.g24c771968df_1_0" target="_blank">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>More Sorting</td>
+                        <td><a href="https://docs.google.com/presentation/d/1lFMIxrAGs-pizTztJKiJNXzox0j4qmEOZ3YUs4lrUAo/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Final Review</td>
+                        <td><a href="https://docs.google.com/presentation/d/1Ii37kGHmPAIN-EMM1bLmj9e083hC0HGS6rn8-OTsTyQ/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://docs.google.com/document/d/1XL91feqiGoPLAQ5VsEArzHEUIAjJ6ElvUi7Lr3wG3bE/edit?tab=t.0#heading=h.evv6nho5j58g" target="_blank">Cheatsheet 1</a> / <a href="https://docs.google.com/document/d/1PMoL1xJ9xa6ywQQ8HCc1oxLf2TUCiCaKaatlKYv6RZw/edit" target="_blank">Cheatsheet 2</a> / <a href="https://drive.google.com/drive/folders/1JBG0q3fL7U4KtxKRdvCExDfotbXyOc1u" target="_blank">iPad Notes</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Fall 2024 -->
+        <section>
+            <h2>Fall 2024 Discussion Materials (Credit to Stella Kaval)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Slides</th>
+                        <th>Resources</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Introduction to Java</td>
+                        <td><a href="https://docs.google.com/presentation/d/1zmtJ-XOSdg5a4tth2-Ib08LBVvcEBbQGVfQhG4jGtnQ/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/1Q3FvgNW3Xhou-yZ82hnBOOm91CaOUMBg/view?usp=sharing" target="_blank">Video</a> / <a href="https://youtu.be/5d8e3W52jEM" target="_blank">Additional Video</a> / <a href="https://introcs.cs.princeton.edu/java/11cheatsheet/" target="_blank">Java Cheatsheet</a> / <a href="https://codingbat.com/java" target="_blank">CodingBat</a></td>
+                    </tr>
+                    <tr>
+                        <td>Scope, Linked Lists, Arrays</td>
+                        <td><a href="https://docs.google.com/presentation/d/1boE_rlHiKg6gjNji6_o_35TwQADWdVP34EyF6Pr-ki8/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/1vnBLbAynF4Lj-M_kKxmOdaihbfTpIn00/view?usp=sharing" target="_blank">Proj1A Video</a> / <a href="https://youtu.be/VWf05n0C1_0?feature=shared" target="_blank">Additional Video</a> / <a href="https://www.geeksforgeeks.org/linked-list-in-java/" target="_blank">LinkedList Reference</a></td>
+                    </tr>
+                    <tr>
+                        <td>Inheritance</td>
+                        <td><a href="https://docs.google.com/presentation/d/1A4RVuZv5KBWbs1Y0quqsJWhaiDZJwuo_xOLUMoCWk18/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/1c58mcHNM4bhX4IAUtI0XWUpTYDJwqb77/view?usp=sharing" target="_blank">Proj1B Video</a> / <a href="https://www.youtube.com/watch?v=Y96iFd6xslI" target="_blank">Additional Video</a> / <a href="https://drive.google.com/file/d/196cUaEA0Q9aJBbr4Tm43_ybMDuxYcZDp/view?usp=sharing" target="_blank">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>Iterators, Iterables</td>
+                        <td><a href="https://docs.google.com/presentation/d/1CJpnyKt84TyVHnTfHZN82XBItMkL0iGqUt9fW-dsquY/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/1Ip5eUwXKbyemDDsVIIHffGyUG_BBtJIo/view?usp=sharing" target="_blank">Notes</a> / <a href="https://www.youtube.com/playlist?list=PLnp31xXvnfRosONixmTTQnspn7fLOV4-Y" target="_blank">Video Playlist</a> / <a href="https://www.geeksforgeeks.org/java-implementing-iterator-and-iterable-interface/" target="_blank">Iterator Reference</a></td>
+                    </tr>
+                    <tr>
+                        <td>Asymptotics, Disjoint Sets</td>
+                        <td><a href="https://docs.google.com/presentation/d/1yHP02BEnY07MaSsQ9HeMbnzozX2uRcQ-xTmyil1nUAw/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/14oFgPaSeMPVfCud_hI-h0mEDNLMdUoaW/view?usp=sharing" target="_blank">HW2 Video</a> / <a href="https://www.youtube.com/playlist?list=PLnp31xXvnfRpqWL31oiZlmcka8zFyT5uM" target="_blank">Video Playlist</a> / <a href="https://drive.google.com/file/d/1CGFdNGbjJW3UvQFEWjwYoVBBnfaa084R/view" target="_blank">Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>ADTs, BSTs</td>
+                        <td><a href="https://drive.google.com/file/d/14d3AvoYnCAhS36kryXUD82kY9johIEb4/view?usp=drive_link" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/14d3AvoYnCAhS36kryXUD82kY9johIEb4/view?usp=sharing" target="_blank">Notes</a> / <a href="https://www.youtube.com/playlist?list=PLnp31xXvnfRpBCAx-EGDwnOY4YW0zwczO" target="_blank">Video Playlist</a> / <a href="https://drive.google.com/drive/folders/1yNzcoTBk96c4WkbWX1Gv3Ea-p_r-PIrx" target="_blank">Additional Resources</a></td>
+                    </tr>
+                    <tr>
+                        <td>B-Trees, LLRBs, Hashing</td>
+                        <td><a href="https://docs.google.com/presentation/d/1H3GPiOhsjGBB5PJSGmrSpL-JuzrrR38SSb3V7bE-7qo/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/18m-CotzekLYXQEDjZst8y1xIK_t0vs66/view?usp=sharing" target="_blank">Proj2A Video</a> / <a href="https://www.youtube.com/playlist?list=PLnp31xXvnfRrjXIJbf0eFsWeUnD6RsfYa" target="_blank">Video Playlist</a> / <a href="https://cs61b-2.gitbook.io/cs61b-textbook/17.-b-trees/17.7-exercises" target="_blank">B-Trees Exercises</a></td>
+                    </tr>
+                    <tr>
+                        <td>Graphs, Heaps</td>
+                        <td><a href="https://docs.google.com/presentation/d/1FkPygghab3wSGB600cx9VCHVfmji9qd9_Bh8w3rRP18/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/1I1YLP6h2hrL22IbaB3Sa8WG7wBEkKN5R/view?usp=sharing" target="_blank">Proj2B Video</a> / <a href="https://youtu.be/_18j6UgstB4?feature=shared" target="_blank">Additional Video</a> / <a href="https://drive.google.com/file/d/1Xy9NRBjcnAU7n4taOZSnXIAlbVEsaPEq/view?usp=sharing" target="_blank">Notes</a> / <a href="https://www.notion.so/61B-Midterm-2-Review-60e3bc444b7148689283d2d7ae087df2" target="_blank">Midterm Review</a></td>
+                    </tr>
+                    <tr>
+                        <td>Shortest Paths, MSTs</td>
+                        <td><a href="https://docs.google.com/presentation/d/11BpUUMvsMg72UmJgYYpfO_t-HcJxWjkLfTtiJMGgNFg/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/1KszofZZc3ob1S_TUFbs3mvAVjlttmqAi/view?usp=sharing" target="_blank">Notes</a> / <a href="https://www.youtube.com/playlist?list=PLnp31xXvnfRp0SkHfIO9HavzXht0K9mOA" target="_blank">Video Playlist</a> / <a href="https://docs.google.com/presentation/d/1XYC0__43jch8Cfecte_ngf5Zwh4YL6hhv42xJ8DyIWU/edit?usp=sharing" target="_blank">Additional Slides</a></td>
+                    </tr>
+                    <tr>
+                        <td>Graphs II, Tries</td>
+                        <td><a href="https://docs.google.com/presentation/d/1BP_xEkOp65PBFkKaKa3CFZcvhwlPZLxAFm6a6fnQgNc/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/1qTxpSugRQNRoff0Hiv-9ILorcxbeYpeZ/view?usp=sharing" target="_blank">Notes</a> / <a href="https://www.youtube.com/playlist?list=PLnp31xXvnfRrD3GyILak06gbTN0rbKJat" target="_blank">Video Playlist</a> / <a href="https://www.youtube.com/watch?v=LCibXajLbns" target="_blank">Additional Video</a></td>
+                    </tr>
+                    <tr>
+                        <td>Sorting</td>
+                        <td><a href="https://docs.google.com/presentation/d/1N5LlO2-HjASYCruRy-h9aWxWiOgFCI0vvGSwzZxya88/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/1I1EfF2V8kRmO3rSXNdisj9S7sR--aL8i/view?usp=sharing" target="_blank">Notes</a> / <a href="https://www.youtube.com/playlist?list=PLnp31xXvnfRqxJ0qF1CglXRb-Qb-oNOgs" target="_blank">Video Playlist</a> / <a href="https://www.youtube.com/@HackerrankOfficial/search?query=sorting" target="_blank">HackerRank Sorting</a></td>
+                    </tr>
+                    <tr>
+                        <td>More Sorting</td>
+                        <td><a href="https://docs.google.com/presentation/d/1rJQR_d5xf_AZgykfpcUOn8iF9LkiURup60J6H2FJRFY/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://drive.google.com/file/d/1aPjuk2jLXNTifBn25a4M5WMlFBPCDu6b/view?usp=sharing" target="_blank">Proj3B Video</a> / <a href="https://www.youtube.com/playlist?list=PLnp31xXvnfRrpqJ8WTjbBOwSNFg54wQDT" target="_blank">Video Playlist</a> / <a href="https://www.youtube.com/watch?app=desktop&v=KBGQ3xGofN0" target="_blank">Additional Video</a></td>
+                    </tr>
+                    <tr>
+                        <td>Final Review</td>
+                        <td><a href="https://docs.google.com/presentation/d/1mBdYTOhUkpU8jFKsqPCm-iyUMI_aQRGYHQr0kiNmAgU/edit?usp=sharing" target="_blank">Slides</a></td>
+                        <td><a href="https://docs.google.com/document/d/1PMoL1xJ9xa6ywQQ8HCc1oxLf2TUCiCaKaatlKYv6RZw/edit" target="_blank">Cheatsheet</a> / <a href="https://drive.google.com/drive/folders/1JBG0q3fL7U4KtxKRdvCExDfotbXyOc1u" target="_blank">Additional Resources</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
