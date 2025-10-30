@@ -110,6 +110,16 @@ header h1 {
   color: #0073b1;
 }
 
+/* GitHub icon — black default, green on hover */
+.socials a.github-icon i {
+  color: #000;
+  transition: color 0.2s ease;
+}
+
+.socials a.github-icon:hover i {
+  color: #2ea44f; /* GitHub green */
+}
+
 .socials a.leetcode-icon svg {
   width: 4rem;
   height: 4rem;
@@ -137,8 +147,6 @@ table {
   margin: 20px auto 40px;
   border-collapse: collapse;
   font-size: 0.95rem;
-
-  /* explicit outer border so edges display consistently */
   border: 1px solid #ccc;
 }
 
@@ -154,7 +162,6 @@ table th {
   color: #fff;
 }
 
-/* alternate row background */
 table tbody tr:nth-child(odd) {
   background-color: #f9f9f9;
 }
@@ -163,7 +170,6 @@ table tbody tr:nth-child(even) {
   background-color: #fff;
 }
 
-/* hover highlight for normal rows */
 table tbody tr:hover {
   background-color: #e0f7fa;
 }
@@ -178,19 +184,27 @@ table tbody tr:hover {
   padding: 14px 0;
   font-size: 1rem;
   color: #444;
-
-  /* keep horizontal separators */
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-
-  /* ensure vertical edges of the table remain visible */
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
 
-/* remove hover effect for midterm row specifically */
 .midterm-row:hover {
   background: #fafafa !important;
+}
+
+/* Fix alternating row striping so midterm rows do not break pattern */
+table tbody tr:not(.midterm-row):nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:not(.midterm-row):nth-of-type(even) {
+  background-color: #fff;
+}
+
+.midterm-row td {
+  background-color: #fff !important;
 }
 
 /* --------------------------- */
@@ -257,21 +271,6 @@ details a:hover {
   color: #005582;
   text-decoration: underline;
 }
-
-/* Fix alternating row striping so midterm rows do not break pattern */
-table tbody tr:not(.midterm-row):nth-of-type(odd) {
-  background-color: #f9f9f9;
-}
-
-table tbody tr:not(.midterm-row):nth-of-type(even) {
-  background-color: #fff;
-}
-
-/* Ensure midterm rows always stay white */
-.midterm-row td {
-  background-color: #fff !important;
-}
-
 
 /* --------------------------- */
 /* Footer */
