@@ -112,7 +112,7 @@ header h1 {
 
 /* GitHub icon — black default, green on hover */
 .socials a.github-icon i {
-  color: #000;
+  color: #333;
   transition: color 0.2s ease;
 }
 
